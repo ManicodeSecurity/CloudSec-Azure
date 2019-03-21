@@ -39,11 +39,11 @@ resource "azurerm_lb_rule" "lbnatrule" {
 }
 
 data "azurerm_resource_group" "image" {
-  name = "myResourceGroup"
+  name = "manicodePackerGroup"
 }
 
 data "azurerm_image" "image" {
-  name                = "myPackerImage"
+  name                = "nginxPackerImage"
   resource_group_name = "${data.azurerm_resource_group.image.name}"
 }
 
