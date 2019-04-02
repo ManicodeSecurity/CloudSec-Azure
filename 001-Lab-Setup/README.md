@@ -1,4 +1,4 @@
-# Lab Setup
+# Lab 001 - Lab Setup
 The goals of this lab are as follows:
 
 - Successfully authenticate to Azure 
