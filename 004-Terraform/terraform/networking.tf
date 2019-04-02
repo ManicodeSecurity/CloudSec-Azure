@@ -29,7 +29,7 @@ resource "azurerm_public_ip" "vmss" {
   name                         = "vmss-public-ip"
   location                     = "${var.location}"
   resource_group_name          = "${azurerm_resource_group.vmss.name}"
-  public_ip_address_allocation = "static"
+  public_ip_address_allocation = "Static"
   domain_name_label            = "${azurerm_resource_group.vmss.name}"
 
   tags {
