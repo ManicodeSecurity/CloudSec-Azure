@@ -52,6 +52,7 @@ resource "azurerm_virtual_machine_scale_set" "vmss" {
   location            = "${var.location}"
   resource_group_name = "${azurerm_resource_group.vmss.name}"
   upgrade_policy_mode = "Manual"
+  primary             = true
 
   sku {
     name     = "Standard_DS1_v2"
