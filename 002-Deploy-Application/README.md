@@ -63,3 +63,6 @@ We need to create a new inbound security rule as follows:
 ![Inbound Allow 80](../images/inbound-allow.png?raw=true "Inbound Allow 80")
 
 With the new inbound security rule created, you should now be able to hit the provided external IP address and see that NGINX is running and accessible.
+
+### Bonus
+Can you add another inbound security rule to allow access to port 8080 of the VM from only your public IP address instead of the entire internet? Use the Azure `az` cli to build this rule instead of the GUI.
