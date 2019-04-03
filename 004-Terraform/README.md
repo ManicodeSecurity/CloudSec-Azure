@@ -44,9 +44,11 @@ You will be asked to type `yes` during the `terraform apply`.
 
 If everything is successful, a domain name will be printed to the terminal. Visit it and you should be able to see that NGINX is running.
 
+Take a few minutes to see what happened under the hood and what was created. If you vist your Resouce Group screen you can now see several infrastructure objects have been created using Terraform.
+
 ### Task 3: Delete our Infrastructure using Terraform
 
-Now that everything is Infrastructure as Code, we are able to destroy all of the assests with a single command:
+Now that everything is Infrastructure as Code, we are able to destroy all of the assets with a single command:
 ```
 terraform destroy
 ```
