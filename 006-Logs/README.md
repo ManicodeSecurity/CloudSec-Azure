@@ -15,3 +15,10 @@ Create an Alert for your NGINX server that sends an email after CPU usage averag
 It will look something like this:
 
 ![Alert](../images/create-alert.png?raw=true "Alert")
+
+# CLEANUP
+
+We need to destroy our Azure Resource Group using the following command:
+```
+az group delete --name <your_last_name-moto-2019>
+```

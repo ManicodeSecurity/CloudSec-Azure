@@ -3,17 +3,12 @@ In this lab we will create a simple data storage location in Azure and apply sec
 
 ## Task 1. Create a Storage Account
 An Azure storage account contains all of your Azure Storage data objects: blobs, files, queues, tables, and disks. We first need to create a Storage Account before storing any files in Blob or File-based storage. 
-```
-az storage account create \
-    --name <your_last_name> \
-    --resource-group <your_resource_group> \
-    --location eastus \
-    --sku Standard_LRS \
-    --encryption blob
-```
 
-## Task 2: Create a Storage Container
+We need to create a storage container to begin using our new Storage Account.
 
+In the navigation on the left, click `Storage accounts`.
+
+Now, create our Storage container as follows:
 ![Create Container](../images/create-container.png?raw=true "Create Container")
 
 Now, fill in some details about your new Storage Container:
@@ -48,3 +43,16 @@ Your Storage Account data is now being encrypted using a customer controlled key
 
 ## Bonus
 Using IAM, give the user `jmesta@manicode` read-only access to the newly created Storage Account. Remember, use built-in roles when possible and where applicable. 
+
+## Further Reading
+It is also easy to create storage accounts using the CLI as follows:
+```
+```
+az storage account create \
+    --name <your_last_name> \
+    --resource-group <your_resource_group> \
+    --location eastus \
+    --sku Standard_LRS \
+    --encryption blob
+```
+```
