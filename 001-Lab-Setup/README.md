@@ -41,13 +41,13 @@ az account list --output table
 ```
 2. Choose the account with the `"name": "MSI-CLOUD-SEC-BOOTCAMP-DQ650"` and copy the `id` value to your clipboard.
 
-3. Now, set your account to the subscription id:
+3. Now, set your account to the subscriptionId from the above command:
 ```
 az account set --subscription 586b8dda-9e70-####-##########
 ```
 4. Ensure you are using the correct account:
 ```
-az account show
+az account show --output table
 ```
 
 ## Create a Resource Group
@@ -57,7 +57,7 @@ We need an an isolated location to perform the labs for class within our Subscri
 
 1. First, let's use the `az` cli to show a list of Resource Groups already existing in our Subscription:
 ```
-az group list
+az group list --output table
 ```
 2. Create a Resource Group to use for your lab activities. 
 
@@ -69,3 +69,5 @@ az group create -n <YOUR_LAST_NAME>_MOTO_2019 -l eastus
 ### Ensure the Resource Group was Created in the UI
 Now, go back to the Azure Portal and click `Resource Groups` in the navigation. You should see your newly created group in the list:
 ![Resource Group](../images/resource-groups.png?raw=true "Resource Group")
+
+You will likely need to apply a filter to only show Resource Groups whic are part of the `MSI-CLOUD-SEC-BOOTCAMP-DQ650` subscription.
