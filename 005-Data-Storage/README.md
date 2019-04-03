@@ -42,11 +42,10 @@ Select your recently created Key Vault and generated key as follows:
 Your Storage Account data is now being encrypted using a customer controlled key stored in Azure Key Vault!
 
 ## Bonus
-Using IAM, give the user `jmesta@manicode` read-only access to the newly created Storage Account. Remember, use built-in roles when possible and where applicable. 
+Using IAM, give the user `jmesta@manicode.com` read-only access to the newly created Storage Account. Remember, use built-in roles when possible and where applicable. 
 
 ## Further Reading
 It is also easy to create storage accounts using the CLI as follows:
-```
 ```
 az storage account create \
     --name <your_last_name> \
@@ -54,5 +53,4 @@ az storage account create \
     --location eastus \
     --sku Standard_LRS \
     --encryption blob
-```
 ```
