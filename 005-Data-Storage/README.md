@@ -32,7 +32,7 @@ az keyvault create --name "Secret-Vault-<your_last_name>" --resource-group "<you
 ```
 Now create a key to use. We are using default parameters but many more options for key creation can be found [here](https://docs.microsoft.com/en-us/cli/azure/keyvault/key?view=azure-cli-latest#az-keyvault-key-create):
 ```
-az keyvault key create --name --vault-name <Secret-Vault-<your_last_name>
+az keyvault key create --name encryptallthethings --vault-name <Secret-Vault-<your_last_name>
 ```
 Now, in the Storage Account settings page click on `Encryption`. Select the `Use your own key` box. 
 
