@@ -1,3 +1,6 @@
+# Lab 5 - Data Storage
+In this lab we will create a simple data storage location in Azure and apply security controls around it.
+
 ## Task 1. Create a Storage Account
 An Azure storage account contains all of your Azure Storage data objects: blobs, files, queues, tables, and disks. We first need to create a Storage Account before storing any files in Blob or File-based storage. 
 ```

@@ -1,4 +1,4 @@
-# Using Terraform to Deploy Infrastructure
+# Lab 004 - Terraform
 [Terraform](https://www.terraform.io/intro/index.html) is a tool for building, changing, and versioning infrastructure safely and efficiently. Terraform can manage existing and popular service providers as well as custom in-house solutions. 
 
 This lab will deploy the following resources to your Azure resource group using Terraform:

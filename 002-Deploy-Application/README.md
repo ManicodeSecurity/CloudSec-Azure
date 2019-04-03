@@ -1,7 +1,6 @@
 # Lab 002 - Deploying a Cloud Application
 The goals of this lab are as follows:
 
-- View available VM images 
 - Use the CLI to create a VM in Azure
 - Create a VPC
 - Lock Down the VM using Security Rules
@@ -51,9 +50,9 @@ The output should be a JSON blob that will look similar to the following:
 ### Task 1: Review the Default Network Security Groups
 If you try to visit the public IP address of the NGINX Virtual Machine you will get a `503` error. This is due to our default Network Security Group that was created. A rule called `DenyAllInBound` ensures no traffic other than SSH is allowed to this box.
 
-![Inbound](../images/inbound-rules.png?raw=true "Inbound Rules")
+In your Resource Group, click on the Network Security Group called `myFirstVMNSG` then click `Inbound security rules`.
 
-In your Resource Group, click on the Network Security Group called `myFirstVMNSG` then click `Inbound security rules`
+![Inbound](../images/inbound-rules.png?raw=true "Inbound Rules")
 
 ### Task 2: Allow traffic to port 80
 We need to create a new inbound security rule as follows:

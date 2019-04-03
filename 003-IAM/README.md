@@ -1,10 +1,13 @@
+# Lab 003 - IAM
+This lab will help us understand how users can be restricted to cloud resources inside of Azure.
+
 ## Create a Role Assignment to Add a User to our Resource Group
 
 We will use the Azure Portal UI to add a restricted "read only" user to our Resource Group. We will use the built-in role named `Reader` to accomplish this.
 
 ### Task 1: View IAM Management in Azure Portal
 
-In the UI, click on your Resource Group <your_last_name-moto-2019> and then click IAM.
+In the UI, click on your Resource Group <your_last_name-moto-2019> and then click `Access Control (IAM)`.
 
 In the upper left corner, click the `+Add` button then `Add role assignment` as follows:
 
@@ -35,6 +38,7 @@ Now, we can log in as `jmesta@manicode.com` and verify that our user is only abl
 Logged in as the `jmesta@manicode.com`, navigate to `Virtual machines`. You will see one nginx VM running that this user has access to view. Click the checkbox next to the VM and then `delete`. 
 
 You should get an error due to your permissions. 
+![Fail](../images/delete-fail.png?raw=true "Fail")
 
 ## Bonus
 Can you create a new custom role and assign it to your Resource Group?
