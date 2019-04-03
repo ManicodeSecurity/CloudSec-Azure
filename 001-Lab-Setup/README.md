@@ -37,7 +37,7 @@ When using Azure Cloud Shell, we are logged in automatically to the appropriate 
 
 1. View a list of Azure accounts:
 ```
-az account list
+az account list --output table
 ```
 2. Choose the account with the `"name": "MSI-CLOUD-SEC-BOOTCAMP-DQ650"` and copy the `id` value to your clipboard.
 
