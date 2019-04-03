@@ -7,7 +7,9 @@ The goals of this lab are as follows:
 - Create a Resource Group
 
 ## Authenticate to Azure
-1. Use your corporate AD credentials to authenticate to the Azure web portal. The URL will be provided to you by the instructor. 
+1. Visit [https://portal.azure.com](https://portal.azure.com)
+
+Use your corporate AD credentials to authenticate to the Azure web portal. After entering your email address you will be redirected to a page to enter your corporate AD username and password.
 
 2. After logging in, you will be redirected to the Home page which will give you a rundown of you Azure infrastructure at a glance. 
 
