@@ -30,7 +30,7 @@ In Cloud Shell, use a text editor such as vim or nano, add your Resource Group n
 
 
 
-## Task 2: Run the Terraform Commands
+## Task 3: Run the Terraform Commands
 
 Now run the following Terraform commands. Make sure you are in the correct directory where the `.tf` files are located.
 
