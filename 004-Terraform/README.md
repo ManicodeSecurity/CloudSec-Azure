@@ -1,14 +1,46 @@
+# Using Terraform to Deploy Infrastructure
+[Terraform](https://www.terraform.io/intro/index.html) is a tool for building, changing, and versioning infrastructure safely and efficiently. Terraform can manage existing and popular service providers as well as custom in-house solutions. 
 
+This lab will deploy the following resources to your Azure resource group using Terraform:
+```
+A virtual network with the CIDR 10.0.0.0/16
 
+Two public IP addresses
+An Azure load balancer
 
-First, let's clean up our VM from the prior lab. 
+A virtual machine scale set attached to the vnet
 
-az vm delete --resource-group <your_last_name-moto-2019> --name myFirstVM
+A virtual machine connected to the vnet
+```
 
-Clone this Repo
+## Task 1: Clone this Repository
+In Cloud Shell run the following commands to ensure the correct files are available:
+```
+git clone https://github.com/ManicodeSecurity/CloudSec-Azure
 
-Now run Terraform
+cd Cloudsec-Azure/004-Terraform/terraform
+```
 
-Plan the execution
+Now, review the Terraform files in the repository and make sure you understand what is about to be deployed. 
 
-Apply
+## Task 2: Run the Terraform Commands
+
+Now run the following Terraform commands. Make sure you are in the correct directory where the `.tf` files are located.
+
+```
+terraform init
+terraform plan
+terraform apply
+```
+
+You will be asked to type `yes` during the `terraform apply`.
+
+If everything is successful, a domain name will be printed to the terminal. Visit it and you should be able to see that NGINX is running.
+
+### Task 3: Delete our Infrastructure using Terraform
+
+Now that everything is Infrastructure as Code, we are able to destroy all of the assests with a single command:
+```
+terraform destroy
+```
+(This may take several minutes)
