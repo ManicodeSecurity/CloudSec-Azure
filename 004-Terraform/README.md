@@ -52,4 +52,4 @@ Now that everything is Infrastructure as Code, we are able to destroy all of the
 ```
 terraform destroy
 ```
-(This may take several minutes)
+(This may take several minutes, seriously...it takes forever)
