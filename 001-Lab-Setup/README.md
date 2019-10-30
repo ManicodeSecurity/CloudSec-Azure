@@ -1,9 +1,9 @@
 # Lab 001 - Lab Setup
 The goals of this lab are as follows:
 
-- Successfully authenticate to Azure 
+- Successfully authenticate to Azure
 - Explore Azure Cloud Shell
-- Use the `az` CLI to interact with Azure 
+- Use the `az` CLI to interact with Azure
 - Create a Resource Group
 
 ## Authenticate to Azure
@@ -11,12 +11,12 @@ The goals of this lab are as follows:
 
 Use your corporate AD credentials to authenticate to the Azure web portal. After entering your email address you will be redirected to a page to enter your corporate AD username and password.
 
-2. After logging in, you will be redirected to the Home page which will give you a rundown of you Azure infrastructure at a glance. 
+2. After logging in, you will be redirected to the Home page which will give you a rundown of you Azure infrastructure at a glance.
 
-3. We will use an Azure Subscription for the remainder of the labs called `MSI-CLOUD-SEC-BOOTCAMP-DQ650`. Do not perform any labs outside of this subscription.
+3. We will use an Azure Subscription for the remainder of the labs called `MANICODE_SECURITY`. Do not perform any labs outside of this subscription.
 
-## Open Cloud Shell 
-Cloud Shell offers a browser-accessible, pre-configured shell experience for managing Azure resources without the overhead of installing, versioning, and maintaining a machine yourself on your local machine. Azure Cloud Shell is assigned per unique user account and automatically authenticated with each session. 
+## Open Cloud Shell
+Cloud Shell offers a browser-accessible, pre-configured shell experience for managing Azure resources without the overhead of installing, versioning, and maintaining a machine yourself on your local machine. Azure Cloud Shell is assigned per unique user account and automatically authenticated with each session.
 
 We will use Cloud Shell exclusively for the remainder of the labs.
 
@@ -29,9 +29,9 @@ We will use Cloud Shell exclusively for the remainder of the labs.
 ![Cloud Shell Bash](../images/azure-bash.png?raw=true "Cloud Shell Bash")
 
 ## Explore the Azure CLI
-The Azure CLI is a command-line tool providing a simple to use experience for managing Azure resources. The CLI is designed to make scripting easy, query data, support long-running operations, and more. 
+The Azure CLI is a command-line tool providing a simple to use experience for managing Azure resources. The CLI is designed to make scripting easy, query data, support long-running operations, and more.
 
-When using Azure Cloud Shell, we are logged in automatically to the appropriate account. 
+When using Azure Cloud Shell, we are logged in automatically to the appropriate account.
 
 ### Ensure the appropriate account ID is set:
 
@@ -39,7 +39,7 @@ When using Azure Cloud Shell, we are logged in automatically to the appropriate 
 ```
 az account list --output table
 ```
-2. Choose the account with the `"name": "MSI-CLOUD-SEC-BOOTCAMP-DQ650"` and copy the `id` value to your clipboard.
+2. Choose the account with the `"name": "MANICODE_SECURITY"` and copy the `id` value to your clipboard.
 
 3. Now, set your account to the subscriptionId from the above command:
 ```
@@ -51,7 +51,7 @@ az account show --output table
 ```
 
 ## Create a Resource Group
-We need an an isolated location to perform the labs for class within our Subscription. We will use the `Resource Group` feature in Azure to carve out an isolated location to spin up infrastructure. Resource Groups are used to create a logical collection of cloud-based assets such as Virtual Machines or Networks. 
+We need an an isolated location to perform the labs for class within our Subscription. We will use the `Resource Group` feature in Azure to carve out an isolated location to spin up infrastructure. Resource Groups are used to create a logical collection of cloud-based assets such as Virtual Machines or Networks.
 
 ### Create an Azure Resource Group using the CLI
 
@@ -59,15 +59,15 @@ We need an an isolated location to perform the labs for class within our Subscri
 ```
 az group list --output table
 ```
-2. Create a Resource Group to use for your lab activities. 
+2. Create a Resource Group to use for your lab activities.
 
 (!!) *REPLACE <YOUR_LAST_NAME> WITH....YOUR ACTUAL LAST NAME* (!!)
 ```
-az group create -n <YOUR_LAST_NAME>_MOTO_2019 -l eastus
+az group create -n <YOUR_LAST_NAME>_MANICODE -l eastus
 ```
 
 ### Ensure the Resource Group was Created in the UI
 Now, go back to the Azure Portal and click `Resource Groups` in the navigation. You should see your newly created group in the list:
 ![Resource Group](../images/resource-groups.png?raw=true "Resource Group")
 
-You will likely need to apply a filter to only show Resource Groups whic are part of the `MSI-CLOUD-SEC-BOOTCAMP-DQ650` subscription.
+You may need to apply a filter to only show Resource Groups whic are part of the `MANICODE_SECURITY` subscription.
