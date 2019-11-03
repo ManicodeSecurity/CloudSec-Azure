@@ -13,7 +13,7 @@ We will use the `az` cli to create a Virtual Machine in our previously created r
 
 The NGINX image is located in a different resource group that we need to provide to the `az vm create` command.
 ```
-az vm create --generate-ssh-keys --resource-group <your_resource_group_name> --name myFirstVM --image /subscriptions/586b8dda-9e70-41dc-8d96-3590deff4451/resourceGroups/MANICODEPACKERGROUP/providers/Microsoft.Compute/images/nginxPackerImage
+az vm create --generate-ssh-keys --resource-group <your_resource_group_name> --name myFirstVM --image /subscriptions/15d6ea41-1e70-425e-84cf-ca13e92a7443/resourceGroups/manicodePackerGroup/providers/Microsoft.Compute/images/nginxPackerImage
 ```
 
 Now, take a look at the resources that were created in the Azure UI. If you click on `Resource groups -> Your resource group` you will see a list of resources:
@@ -35,13 +35,13 @@ The output should be a JSON blob that will look similar to the following:
 ```
 {
   "fqdns": "",
-  "id": "/subscriptions/586b8dda-9e70-41dc-8d96-3590deff4451/resourceGroups/mesta_MOTO_2019/providers/Microsoft.Compute/virtualMachines/nginxVM",
+  "id": "/subscriptions/586b8dda-9e70-41dc-8d96-3590deff4451/resourceGroups/MESTA_MANICODE/providers/Microsoft.Compute/virtualMachines/nginxVM",
   "location": "eastus",
   "macAddress": "00-0D-3A-1E-ED-D8",
   "powerState": "VM running",
   "privateIpAddress": "10.0.0.4",
   "publicIpAddress": "40.121.145.131",
-  "resourceGroup": "<your_last_name_MOTO_2019",
+  "resourceGroup": "MESTA_MANICODE",
   "zones": ""
 }
 ```
