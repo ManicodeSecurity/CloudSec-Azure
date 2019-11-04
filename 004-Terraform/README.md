@@ -24,7 +24,7 @@ cd Cloudsec-Azure/004-Terraform/terraform
 Now, review the Terraform files in the repository and make sure you understand what is about to be deployed.
 
 ## Task 2: Add your Resource Group to variables.tf
-In Cloud Shell, use a text editor such as vim or nano, add your Resource Group name `<your_last_name-moto-2019>` to the following field below in the `variables.tf` file:
+In Cloud Shell, use a text editor such as vim or nano, add *your* Resource Group name to the following field below in the `variables.tf` file:
 
 ![add resource](../images/variables.png?raw=true "add resource")
 
