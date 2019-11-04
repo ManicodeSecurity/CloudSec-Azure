@@ -63,7 +63,7 @@ az group list --output table
 
 (!!) *REPLACE <YOUR_LAST_NAME> WITH....YOUR ACTUAL LAST NAME* (!!)
 ```
-az group create -n <YOUR_LAST_NAME>_MANICODE -l eastus
+az group create -n <YOUR_LAST_NAME>_MANICODE -l westus2
 ```
 
 ### Ensure the Resource Group was Created in the UI

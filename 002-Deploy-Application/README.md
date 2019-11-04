@@ -36,7 +36,7 @@ The output should be a JSON blob that will look similar to the following:
 {
   "fqdns": "",
   "id": "/subscriptions/586b8dda-9e70-41dc-8d96-3590deff4451/resourceGroups/MESTA_MANICODE/providers/Microsoft.Compute/virtualMachines/nginxVM",
-  "location": "eastus",
+  "location": "westus2",
   "macAddress": "00-0D-3A-1E-ED-D8",
   "powerState": "VM running",
   "privateIpAddress": "10.0.0.4",
