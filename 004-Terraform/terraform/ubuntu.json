@@ -7,7 +7,7 @@
       "tenant_id": "69bf1b13-bbe6-427a-9300-3a629d363dd6",
       "subscription_id": "15d6ea41-1e70-425e-84cf-ca13e92a7443",
 
-      "managed_image_resource_group_name": "manicodePackerGroup",
+      "managed_image_resource_group_name": "manicodePackerWest",
       "managed_image_name": "nginxPackerImage",
 
       "os_type": "Linux",
@@ -20,7 +20,7 @@
           "task": "Image deployment"
       },
 
-      "location": "East US",
+      "location": "West US 2",
       "vm_size": "Standard_DS2_v2"
     }],
     "provisioners": [{

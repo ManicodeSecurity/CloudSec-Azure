@@ -13,7 +13,7 @@ We will use the `az` cli to create a Virtual Machine in our previously created r
 
 The NGINX image is located in a different resource group that we need to provide to the `az vm create` command.
 ```
-az vm create --generate-ssh-keys --resource-group <your_resource_group_name> --name myFirstVM --image /subscriptions/15d6ea41-1e70-425e-84cf-ca13e92a7443/resourceGroups/manicodePackerGroup/providers/Microsoft.Compute/images/nginxPackerImage
+az vm create --generate-ssh-keys --resource-group <your_resource_group_name> --name myFirstVM --image /subscriptions/15d6ea41-1e70-425e-84cf-ca13e92a7443/resourceGroups/manicodePackerWest/providers/Microsoft.Compute/images/nginxPackerImage
 ```
 
 Now, take a look at the resources that were created in the Azure UI. If you click on `Resource groups -> Your resource group` you will see a list of resources:
